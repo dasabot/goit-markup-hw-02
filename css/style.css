@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 31px;
+  display: flex;
+  cursor: pointer;
+}
+.logo__text {
+  color: black;
+}
+.logo__text_blue {
+  color: #2196F3;
+}
+.logo__text_white {
+  color: white;
+}
+
+.header {
+  width: 100%;
+}
+.header-container {
+  display: flex;
+  padding: 24px 215px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 0 60px;
+  padding: 0;
+}
+.navbar__item {
+  padding: 0 25px;
+}
+.navbar__item:hover .navbar__link {
+  color: #2196F3;
+}
+.navbar__item:focus .navbar__link {
+  color: #2196F3;
+}
+.navbar__link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.contacts {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+.contacts__item {
+  padding: 0 25px;
+}
+.contacts__item:hover .contacts__link {
+  color: #2196F3;
+}
+.contacts__item:focus .contacts__link {
+  color: #2196F3;
+}
+.contacts__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.order {
+  background-color: #2F303A;
+  padding: 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.order__header {
+  color: white;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.order__button {
+  cursor: pointer;
+  padding: 10px 32px;
+  background-color: #2196F3;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+.section {
+  padding: 94px 215px;
+}
+
+.priorities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #212121;
+  padding: 94px 215px 0 215px;
+}
+
+.priorities-articles {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.priorities-articles__item {
+  margin-left: 30px;
+}
+.priorities-articles__item:first-of-type {
+  margin-left: 0;
+}
+.priorities-articles__item-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+.priorities-articles__item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.second-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 0 50px 0;
+  color: #212121;
+}
+
+.images-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.images-list__item {
+  margin-left: 30px;
+}
+.images-list__item:first-of-type {
+  margin-left: 0;
+}
+
+.team-section {
+  background-color: #F5F5F5;
+}
+
+.team {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.team-card {
+  margin-left: 30px;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+.team-card:first-of-type {
+  margin-left: 0;
+}
+.team-card__name {
+  font-weight: 500;
+  color: #212121;
+  margin: 30px 0 10px 0;
+}
+.team-card__profession {
+  color: #757575;
+}
+
+.footer {
+  background-color: #2F303A;
+  padding: 60px 215px;
+  text-align: left;
+}
+.footer__contacts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer__contacts-item {
+  margin-bottom: 9px;
+}
+.footer__contacts-link {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.location {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: white;
+  font-style: normal;
+  padding: 20px 0 9px 0;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #ECECEC;
+}
+.portfolio__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+.portfolio__item {
+  width: 370px;
+  margin-bottom: 30px;
+  border: 1px solid #EEEEEE;
+}
+.portfolio__item-info {
+  padding: 20px 24px;
+}
+.portfolio__item-header {
+  margin: 0 0 4px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.portfolio__item-text {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin: 0;
+}
+.portfolio__link {
+  text-decoration: none;
+}
+
+.filters {
+  list-style: none;
+  display: flex;
+  margin-bottom: 50px;
+}
+.filters__item {
+  margin-left: 8px;
+}
+.filters__item:first-of-type {
+  margin-left: 0;
+}
+.filters__button {
+  border-radius: 4px;
+  background-color: #ECECEC;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  border: 0;
+  cursor: pointer;
+}
+.filters__button:hover {
+  background-color: #2196F3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: white;
+}
+.filters__button:focus {
+  background-color: #2196F3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: white;
+}
+.filters__button_active {
+  background-color: #2196F3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: white;
+}/*# sourceMappingURL=style.css.map */
