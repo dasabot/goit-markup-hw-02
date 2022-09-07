@@ -8,6 +8,7 @@ $light-gray: #F5F5F5;
 $gray: #757575;
 $dark-gray: #2F303A;
 $darkest-gray: #212121;
+$white: white;
 
 
 html,
@@ -21,7 +22,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: white;
+    background-color: $white;
+    font-size: 14px;
+    letter-spacing: .03em;
+    color: $darkest-gray;
 }
 
 .logo {
@@ -29,8 +33,7 @@ body {
     text-decoration: none;
     font-weight: 700;
     font-size: 26px;
-    letter-spacing: .03em;
-    line-height: 31px;
+    line-height: 1.2;
     display: flex;
     cursor: pointer;
 
@@ -42,7 +45,7 @@ body {
         }
 
         &_white {
-            color: white;
+            color: $white;
         }
     }
 }
@@ -84,6 +87,12 @@ body {
                 color: $blue;
             }
         }
+
+        &_active {
+            .navbar__link {
+                color: $blue;
+            }
+        }
     }
 
     &__link {
@@ -91,8 +100,7 @@ body {
         color: black;
         cursor: pointer;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
+        line-height: 1.14;
         letter-spacing: .02em;
     }
 }
@@ -122,8 +130,7 @@ body {
     &__link {
         text-decoration: none;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
+        line-height: 1.14;
         letter-spacing: .02em;
         color: $gray;
     }
@@ -137,17 +144,18 @@ body {
     align-items: center;
 
     &__header {
-        color: white;
+        color: $white;
         font-weight: 900;
         font-size: 44px;
-        line-height: 60px;
-        letter-spacing: 0.06em;
+        line-height: 1.36;
+        letter-spacing: .06em;
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 30px;
     }
 
     &__button {
+        font-family: 'Roboto', sans-serif;
         cursor: pointer;
         padding: 10px 32px;
         background-color: $blue;
@@ -156,10 +164,10 @@ body {
         border: 0;
         font-weight: 700;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 1.9;
         text-align: center;
         letter-spacing: 0.06em;
-        color: #FFFFFF;
+        color: $white;
     }
 }
 
@@ -171,7 +179,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: $darkest-gray;
     padding: 94px 215px 0 215px;
 }
 
@@ -189,17 +196,14 @@ body {
 
         &-header {
             font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            letter-spacing: .03em;
+            line-height: 1.14;
             text-transform: uppercase;
             margin: 0 0 10px 0;
         }
 
         &-text {
             font-weight: 400;
-            font-size: 14px;
-            line-height: 24px;
+            line-height: 1.7;
             letter-spacing: 0.03em;
             color: $gray;
         }
@@ -209,11 +213,9 @@ body {
 .second-header {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
-    letter-spacing: .03em;
     margin: 0 0 50px 0;
-    color: $darkest-gray;
 }
 
 .images-list {
@@ -241,29 +243,29 @@ body {
 
     &-card {
         margin-left: 30px;
-        background-color: white;
+        background-color: $white;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         text-align: center;
         font-size: 16px;
-        line-height: 19px;
-        letter-spacing: .03em;
-
+        line-height: 1.18;
 
         &:first-of-type {
             margin-left: 0;
         }
 
         &__name {
+            font-size: 16px;
+            line-height: 1.18;
             font-weight: 500;
-            color: $darkest-gray;
             margin: 30px 0 10px 0;
         }
 
         &__profession {
             color: $gray;
+            font-size: 16px;
+            line-height: 1.18;
         }
-
     }
 }
 
@@ -271,7 +273,6 @@ body {
     background-color: $dark-gray;
     padding: 60px 215px;
     text-align: left;
-
 
     &__contacts {
         list-style: none;
@@ -283,9 +284,7 @@ body {
         }
 
         &-link {
-            font-size: 14px;
-            line-height: 24px;
-            letter-spacing: .03em;
+            line-height: 1.7;
             color: $gray;
             text-decoration: none;
             font-style: normal;
@@ -294,10 +293,8 @@ body {
 }
 
 .location {
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: .03em;
-    color: white;
+    line-height: 1.7;
+    color: $white;
     font-style: normal;
     padding: 20px 0 9px 0;
 }
@@ -307,6 +304,16 @@ body {
     flex-direction: column;
     align-items: center;
     border-top: 1px solid $lighest-gray;
+
+    &__section-header {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 
     &__list {
         list-style: none;
@@ -330,15 +337,14 @@ body {
             margin: 0 0 4px 0;
             font-weight: 700;
             font-size: 18px;
-            line-height: 36px;
+            line-height: 2;
             letter-spacing: .06em;
             color: $darkest-gray;
         }
 
         &-text {
             font-size: 16px;
-            line-height: 30px;
-            letter-spacing: .03em;
+            line-height: 1.8;
             color: $gray;
             margin: 0;
         }
@@ -363,34 +369,33 @@ body {
     }
 
     &__button {
+        font-family: 'Roboto', sans-serif;
         border-radius: 4px;
         background-color: $lighest-gray;
         padding: 6px 22px;
         font-weight: 500;
         font-size: 16px;
-        line-height: 26px;
+        line-height: 1.6;
         text-align: center;
-        letter-spacing: .03em;
-        color: $darkest-gray;
         border: 0;
         cursor: pointer;
 
         &:hover {
             background-color: $blue;
             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-            color: white;
+            color: $white;
         }
 
         &:focus {
             background-color: $blue;
             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-            color: white;
+            color: $white;
         }
 
         &_active {
             background-color: $blue;
             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-            color: white;
+            color: $white;
         }
     }
 }

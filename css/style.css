@@ -12,6 +12,9 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   background-color: white;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .logo {
@@ -19,8 +22,7 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
-  letter-spacing: 0.03em;
-  line-height: 31px;
+  line-height: 1.2;
   display: flex;
   cursor: pointer;
 }
@@ -64,13 +66,15 @@ body {
 .navbar__item:focus .navbar__link {
   color: #2196F3;
 }
+.navbar__item_active .navbar__link {
+  color: #2196F3;
+}
 .navbar__link {
   text-decoration: none;
   color: black;
   cursor: pointer;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -92,8 +96,7 @@ body {
 .contacts__link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
 }
@@ -109,13 +112,14 @@ body {
   color: white;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
 }
 .order__button {
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   padding: 10px 32px;
   background-color: #2196F3;
@@ -124,10 +128,10 @@ body {
   border: 0;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: white;
 }
 
 .section {
@@ -138,7 +142,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #212121;
   padding: 94px 215px 0 215px;
 }
 
@@ -155,16 +158,13 @@ body {
 }
 .priorities-articles__item-header {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
   margin: 0 0 10px 0;
 }
 .priorities-articles__item-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -172,11 +172,9 @@ body {
 .second-header {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   margin: 0 0 50px 0;
-  color: #212121;
 }
 
 .images-list {
@@ -207,19 +205,21 @@ body {
   border-radius: 0px 0px 4px 4px;
   text-align: center;
   font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
+  line-height: 1.18;
 }
 .team-card:first-of-type {
   margin-left: 0;
 }
 .team-card__name {
+  font-size: 16px;
+  line-height: 1.18;
   font-weight: 500;
-  color: #212121;
   margin: 30px 0 10px 0;
 }
 .team-card__profession {
   color: #757575;
+  font-size: 16px;
+  line-height: 1.18;
 }
 
 .footer {
@@ -236,18 +236,14 @@ body {
   margin-bottom: 9px;
 }
 .footer__contacts-link {
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: 1.7;
   color: #757575;
   text-decoration: none;
   font-style: normal;
 }
 
 .location {
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: 1.7;
   color: white;
   font-style: normal;
   padding: 20px 0 9px 0;
@@ -258,6 +254,15 @@ body {
   flex-direction: column;
   align-items: center;
   border-top: 1px solid #ECECEC;
+}
+.portfolio__section-header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .portfolio__list {
   list-style: none;
@@ -279,14 +284,13 @@ body {
   margin: 0 0 4px 0;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
 }
 .portfolio__item-text {
   font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
+  line-height: 1.8;
   color: #757575;
   margin: 0;
 }
@@ -306,15 +310,14 @@ body {
   margin-left: 0;
 }
 .filters__button {
+  font-family: "Roboto", sans-serif;
   border-radius: 4px;
   background-color: #ECECEC;
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
   border: 0;
   cursor: pointer;
 }
