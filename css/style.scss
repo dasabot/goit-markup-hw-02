@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
-$blue: #2196F3;
-$border-color: #EEEEEE;
-$lighest-gray: #ECECEC;
-$light-gray: #F5F5F5;
-$gray: #757575;
-$dark-gray: #2F303A;
-$darkest-gray: #212121;
-$white: white;
-
+:root {
+    --blue: #2196F3;
+    --border-color: #EEEEEE;
+    --lighest-gray: #ECECEC;
+    --light-gray: #F5F5F5;
+    --gray: #757575;
+    --dark-gray: #2F303A;
+    --darkest-gray: #212121;
+    --white: white;
+  }
 
 html,
 body {
@@ -22,7 +23,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: $white;
+    background-color: --white;
     font-size: 14px;
     letter-spacing: .03em;
     color: $darkest-gray;
